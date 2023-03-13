@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url(../img/photo-1588632901974-5ae3618d967b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    background-color: rgb(87, 116, 245);
+    justify-content: space-between;
+    align-items: center;
+    padding: -1em;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+header a:hover {
+    color: rgb(119, 0, 255);
+}
+
+.navbar a {
+    font-weight: 60;
+    padding-right: 2rem;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+.navbar a:hover {
+    color: rgb(119, 0, 255);
+}
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(87, 116, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;   
+}
+
+
+.social-icon1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../img/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../img/InstagramBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../img/TwitterBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon1:hover{
+    background-color: rgb(66, 92, 37);
+    filter: invert(1);
+}
+.social-icon2:hover{
+    background-color: rgb(66, 92, 37);
+    filter: invert(1);
+}
+.social-icon3:hover{
+    background-color: rgb(66, 92, 37);
+    filter: invert(1);
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.menu-item{
+    text-decoration: none;
+    color: #f2f2f2;
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*contenedores v2*/
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.image{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.container-cm {
+    background-color: rgb(165, 165, 214);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.contsiner-cm-h h2 {
+    color: rgb(119, 0, 255);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.container-tad {
+    background-color: rgb(229, 229, 247);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.container-pqe {
+    background-color: rgb(116, 135, 240);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+h3 {
+    color: rgb(119, 0, 255);
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin: 0.5rem;
+}
+
+.ta {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.text-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 350px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .image {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* tarjetas */
+.card {
+    margin: 2rem;
+    background:  rgb(87, 116, 245);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(200,200,200);
+}
+
+.pricecontainer {
+    width: 100%;
+    margin-top: 0.7em;
+    background-color:  rgb(87, 116, 245);
+    box-shadow: inset 0px 0px 2em rgba(0, 0, 0, 0.3);
+}
+
+.price {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.75em 0 0 0;
+}
+
+.pricedescriptor {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    padding: 0 0 1em 0;
+}
+
+.includes {
+    text-align: center;
+    color: rgb(255, 0, 191);
+    margin-top: 0.6em;
+    font-size: small;
+    font-weight: bold;
+}
+
+.benefitlist li {
+    color: rgb(255, 255, 255);
+    font-size: small;
+    text-align: center;
+}
+
+
+.btncontainer button {
+    margin: 1em;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    border-style: none;
+    border-radius: 1000000px;
+    color: rgb(239, 239, 239);
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #fe4fe1 0%, #3f00fe 100%);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.btncontainer button:hover {
+    box-shadow: inset 0px 0px 5px rgb(0,0,0);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.btncontainer a{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contacto */
+
+form{
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+legend{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+input, textarea, select{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 150px;
+    max-height: 400px;
+}
+
+select{
+    border-radius: 7px;
+}
+
+#boton{
+    background-color: rgb(87, 116, 245);
+    color: #f2f2f2;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#boton:hover {
+    background-color:rgb(119, 0, 255);
+}
+
+@media (max-width:450px){
+    form{
+        width: 100%;
+    }
+
+}
